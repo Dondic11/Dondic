@@ -1,0 +1,129 @@
+ /* Resetting default browser styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #ff6f61;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ff6f61;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #ff6f61;
+}
+
+.services, .about, .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services .service, .about .about-info, .contact .contact-info {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services .service img, .about .about-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.services .service h3, .about .about-info h3 {
+    margin-top: 15px;
+    color: #333;
+}
+
+.services .service p, .about .about-info p {
+    color: #777;
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form button:hover {
+    background-color: #e15b50;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .services .service, .about .about-info {
+        width: 100%;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 1.1em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
